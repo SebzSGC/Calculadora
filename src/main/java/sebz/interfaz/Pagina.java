@@ -15,7 +15,7 @@ public class Pagina extends javax.swing.JFrame {
     private double primerNumero, resultado, segundoNumero;
     private boolean activado = true;
     private boolean punto = true;
-    
+
     public Pagina() {
         initComponents();
         this.setTitle("Calculadora");
@@ -314,9 +314,9 @@ public class Pagina extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        if(PntNumeros.getText().equals("0")){
+        if (PntNumeros.getText().equals("0")) {
             cadenaNumeros = "9";
-        }else{
+        } else {
             cadenaNumeros += "9";
         }
         PntNumeros.setText(cadenaNumeros);
@@ -324,9 +324,9 @@ public class Pagina extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(PntNumeros.getText().equals("0")){
+        if (PntNumeros.getText().equals("0")) {
             cadenaNumeros = "1";
-        }else{
+        } else {
             cadenaNumeros += "1";
         }
         PntNumeros.setText(cadenaNumeros);
@@ -334,9 +334,9 @@ public class Pagina extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-       if(PntNumeros.getText().equals("0")){
+        if (PntNumeros.getText().equals("0")) {
             cadenaNumeros = "5";
-        }else{
+        } else {
             cadenaNumeros += "5";
         }
         PntNumeros.setText(cadenaNumeros);
@@ -344,11 +344,11 @@ public class Pagina extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void btnPuntoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPuntoActionPerformed
-        if(punto == true){
-            if(cadenaNumeros.equals("")){
-            cadenaNumeros = "0.";    
-            }else{
-                cadenaNumeros +=".";
+        if (punto == true) {
+            if (cadenaNumeros.equals("")) {
+                cadenaNumeros = "0.";
+            } else {
+                cadenaNumeros += ".";
             }
             PntNumeros.setText(cadenaNumeros);
             punto = false;
@@ -361,11 +361,11 @@ public class Pagina extends javax.swing.JFrame {
         operacion = "nula";
         activado = true;
         punto = true;
-        cadenaNumeros="0";
+        cadenaNumeros = "0";
     }//GEN-LAST:event_btnBorrarActionPerformed
 
     private void btnSumarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumarActionPerformed
-        if(activado == true){
+        if (activado == true) {
             primerNumero = Double.parseDouble(cadenaNumeros);
             pntnumeros2.setText(cadenaNumeros + "+");
             PntNumeros.setText("0");
@@ -377,7 +377,7 @@ public class Pagina extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSumarActionPerformed
 
     private void btonRestarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btonRestarActionPerformed
-        if(activado == true){
+        if (activado == true) {
             primerNumero = Double.parseDouble(cadenaNumeros);
             pntnumeros2.setText(cadenaNumeros + "-");
             PntNumeros.setText("0");
@@ -389,7 +389,7 @@ public class Pagina extends javax.swing.JFrame {
     }//GEN-LAST:event_btonRestarActionPerformed
 
     private void btnDivisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivisionActionPerformed
-        if(activado == true){
+        if (activado == true) {
             primerNumero = Double.parseDouble(cadenaNumeros);
             pntnumeros2.setText(cadenaNumeros + "/");
             PntNumeros.setText("0");
@@ -401,9 +401,9 @@ public class Pagina extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDivisionActionPerformed
 
     private void jButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton0ActionPerformed
-        if(PntNumeros.getText().equals("0")){
+        if (PntNumeros.getText().equals("0")) {
             cadenaNumeros = "0";
-        }else{
+        } else {
             cadenaNumeros += "0";
         }
         PntNumeros.setText(cadenaNumeros);
@@ -411,9 +411,9 @@ public class Pagina extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton0ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        if(PntNumeros.getText().equals("0")){
+        if (PntNumeros.getText().equals("0")) {
             cadenaNumeros = "2";
-        }else{
+        } else {
             cadenaNumeros += "2";
         }
         PntNumeros.setText(cadenaNumeros);
@@ -421,9 +421,9 @@ public class Pagina extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        if(PntNumeros.getText().equals("0")){
+        if (PntNumeros.getText().equals("0")) {
             cadenaNumeros = "3";
-        }else{
+        } else {
             cadenaNumeros += "3";
         }
         PntNumeros.setText(cadenaNumeros);
@@ -431,9 +431,9 @@ public class Pagina extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        if(PntNumeros.getText().equals("0")){
+        if (PntNumeros.getText().equals("0")) {
             cadenaNumeros = "4";
-        }else{
+        } else {
             cadenaNumeros += "4";
         }
         PntNumeros.setText(cadenaNumeros);
@@ -441,9 +441,9 @@ public class Pagina extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        if(PntNumeros.getText().equals("0")){
+        if (PntNumeros.getText().equals("0")) {
             cadenaNumeros = "6";
-        }else{
+        } else {
             cadenaNumeros += "6";
         }
         PntNumeros.setText(cadenaNumeros);
@@ -451,9 +451,9 @@ public class Pagina extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        if(PntNumeros.getText().equals("0")){
+        if (PntNumeros.getText().equals("0")) {
             cadenaNumeros = "7";
-        }else{
+        } else {
             cadenaNumeros += "7";
         }
         PntNumeros.setText(cadenaNumeros);
@@ -461,9 +461,9 @@ public class Pagina extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        if(PntNumeros.getText().equals("0")){
+        if (PntNumeros.getText().equals("0")) {
             cadenaNumeros = "8";
-        }else{
+        } else {
             cadenaNumeros += "8";
         }
         PntNumeros.setText(cadenaNumeros);
@@ -471,7 +471,7 @@ public class Pagina extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void btnMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicarActionPerformed
-        if(activado == true){
+        if (activado == true) {
             primerNumero = Double.parseDouble(cadenaNumeros);
             pntnumeros2.setText(cadenaNumeros + "*");
             PntNumeros.setText("0");
@@ -483,7 +483,7 @@ public class Pagina extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMultiplicarActionPerformed
 
     private void btnModuloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModuloActionPerformed
-        if(activado == true){
+        if (activado == true) {
             primerNumero = Double.parseDouble(cadenaNumeros);
             pntnumeros2.setText(cadenaNumeros + "%");
             PntNumeros.setText("0");
@@ -496,84 +496,84 @@ public class Pagina extends javax.swing.JFrame {
 
     private void btnIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIgualActionPerformed
 
-        switch(operacion){
+        switch (operacion) {
             case "+":
-                if(operacion.equals("nula")){
+                if (operacion.equals("nula")) {
                     pntnumeros2.setText(cadenaNumeros);
-                }else{
-                    segundoNumero = Double.parseDouble(cadenaNumeros);     
+                } else {
+                    segundoNumero = Double.parseDouble(cadenaNumeros);
                     resultado = primerNumero + segundoNumero;
                     pntnumeros2.setText(String.valueOf(resultado));
                     cadenaNumeros = String.valueOf(resultado);
                     PntNumeros.setText(cadenaNumeros);
                     operacion = "nula";
                 }
-                pntnumeros2.setText(primerNumero+" + "+segundoNumero+" = ");
+                pntnumeros2.setText(primerNumero + " + " + segundoNumero + " = ");
                 PntNumeros.setText(cadenaNumeros);
                 cadenaNumeros = "";
                 activado = true;
                 break;
-                
+
             case "-":
-                if(operacion.equals("nula")){
+                if (operacion.equals("nula")) {
                     pntnumeros2.setText(cadenaNumeros);
-                }else{
-                    segundoNumero = Double.parseDouble(cadenaNumeros);     
+                } else {
+                    segundoNumero = Double.parseDouble(cadenaNumeros);
                     resultado = primerNumero - segundoNumero;
                     pntnumeros2.setText(String.valueOf(resultado));
                     cadenaNumeros = String.valueOf(resultado);
                     PntNumeros.setText(cadenaNumeros);
                     operacion = "nula";
                 }
-                pntnumeros2.setText(primerNumero+" - "+segundoNumero+" = ");
+                pntnumeros2.setText(primerNumero + " - " + segundoNumero + " = ");
                 cadenaNumeros = "";
                 activado = true;
                 break;
-                
+
             case "*":
-                if(operacion.equals("nula")){
+                if (operacion.equals("nula")) {
                     pntnumeros2.setText(cadenaNumeros);
-                }else{
-                    segundoNumero = Double.parseDouble(cadenaNumeros);     
+                } else {
+                    segundoNumero = Double.parseDouble(cadenaNumeros);
                     resultado = primerNumero * segundoNumero;
                     pntnumeros2.setText(String.valueOf(resultado));
                     cadenaNumeros = String.valueOf(resultado);
                     PntNumeros.setText(cadenaNumeros);
                     operacion = "nula";
                 }
-                pntnumeros2.setText(primerNumero+" * "+segundoNumero+" = ");
+                pntnumeros2.setText(primerNumero + " * " + segundoNumero + " = ");
                 cadenaNumeros = "";
                 activado = true;
                 break;
-                
+
             case "/":
-                if(operacion.equals("nula")){
+                if (operacion.equals("nula")) {
                     pntnumeros2.setText(cadenaNumeros);
-                }else{
-                    segundoNumero = Double.parseDouble(cadenaNumeros);     
+                } else {
+                    segundoNumero = Double.parseDouble(cadenaNumeros);
                     resultado = primerNumero / segundoNumero;
                     pntnumeros2.setText(String.valueOf(resultado));
                     cadenaNumeros = String.valueOf(resultado);
                     PntNumeros.setText(cadenaNumeros);
                     operacion = "nula";
                 }
-                pntnumeros2.setText(primerNumero+" / "+segundoNumero+" = ");
+                pntnumeros2.setText(primerNumero + " / " + segundoNumero + " = ");
                 cadenaNumeros = "";
                 activado = true;
                 break;
-                
+
             case "%":
-                if(operacion.equals("nula")){
+                if (operacion.equals("nula")) {
                     pntnumeros2.setText(cadenaNumeros);
-                }else{
-                    segundoNumero = Double.parseDouble(cadenaNumeros);     
+                } else {
+                    segundoNumero = Double.parseDouble(cadenaNumeros);
                     resultado = primerNumero % segundoNumero;
                     pntnumeros2.setText(String.valueOf(resultado));
                     cadenaNumeros = String.valueOf(resultado);
                     PntNumeros.setText(cadenaNumeros);
                     operacion = "nula";
                 }
-                pntnumeros2.setText(primerNumero+" % "+segundoNumero+" = ");
+                pntnumeros2.setText(primerNumero + " % " + segundoNumero + " = ");
                 cadenaNumeros = "";
                 activado = true;
                 break;
@@ -583,7 +583,6 @@ public class Pagina extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel PntNumeros;

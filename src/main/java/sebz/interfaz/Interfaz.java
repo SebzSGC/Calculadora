@@ -1,7 +1,4 @@
-
-
 package sebz.interfaz;
-
 
 public class Interfaz {
 
